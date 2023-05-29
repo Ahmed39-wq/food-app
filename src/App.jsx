@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getFoodData } from './feature/foodSlice'
-import { addToCart, removeCartItem } from './feature/foodSlice'
+import { addToCart, removeCartItem, clearCart } from './feature/foodSlice'
 
 function App() {
 
@@ -46,6 +46,10 @@ function App() {
           )
         })
       }
+    </div>
+
+    <div >
+      <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
     </div>
     </>
   )

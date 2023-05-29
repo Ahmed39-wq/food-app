@@ -39,6 +39,9 @@ export const foodSlice = createSlice({
     },
     removeCartItem: (state, { payload }) => {
       state.cartItem = state.cartItem.filter(item => item.id !== payload)
+    },
+    clearCart: (state) => {
+      state.cartItem = []
     }
   },
   extraReducers: (builder) => {
@@ -55,5 +58,5 @@ export const foodSlice = createSlice({
   },
 })
 
-export const {addToCart, removeCartItem} = foodSlice.actions;
+export const {addToCart, removeCartItem, clearCart} = foodSlice.actions;
 export default foodSlice.reducer;
