@@ -1,0 +1,22 @@
+
+.add-item button {
+    width: 41px;
+    margin-bottom: 10px;
+}
+
+.quantity {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.quantity p {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity button {
+    width: 41px;
+}
